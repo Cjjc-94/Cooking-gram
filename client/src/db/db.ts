@@ -1,42 +1,63 @@
 import { IRecipe } from "./IRecipe";
 
-let Recipes: [IRecipe] = [
+let Recipes: IRecipe[] = [
   {
-    id: 1,
-    title: 'Pumkin Soup',
-    tags: ['vegitarian', 'soup'],
-    time: 50,
-    difficulty: 2,
-    image: '',
-    ingredients: [
-      {
-        name: 'pumkin',
-        quantity: 800
-      },
-      {
-        name: 'coconut milk',
-        quantity: 400
-      },
-      {
-        name: 'salt',
-        quantity: 5
-      }
+   id: 1,
+   title: 'Pumpkin Soup',
+   tags: ['vegitarian', 'soup'],
+   time: 50,
+   difficulty: 2,
+   image: '',
+   ingredients: [
+     {
+       name: 'pumpkin',
+       quantity: 400
+     },
+     {
+       name: 'coconut milk',
+       quantity: 200
+     },
+     {
+       name: 'salt',
+       quantity: 2
+     }
+   ],
+   instructions: [
+     'chop pumkin',
+     'throw pumpkin and coconut milk in pot',
+     'cook for 40 minutes',
+     'add salt'
+   ],
+   steps: [
+     [
+      {type: "text", value: "chop"},
+      {type: "ingredient", value: "pumpkin"},
+      {type: "text", value:"in small pieces"},
+     ],
+     [
+       {type: "text", value: "add"},
+       {type: "ingredient", value: "coconut milk"},
+       {type: "text", value:"to pot."},
+     ],
+     [
+       {type: "text", value: "add"},
+       {type: "ingredient", value: "pumkin"},
+       {type: "text", value:"to pot."},
+     ],
+     [
+      {type: "text", value: "place pot on medium heat"},
     ],
-    instructions: [
-      'chop pumkin',
-      'throw pumpkin and coconut milk in pot',
-      'cook for 40 minutes',
-      'add salt'
+    [
+      {type: "text", value: "cook for 40 minutes"},
     ],
-    steps: [
-      'chop pumkin',
-      'throw pumkin in pot',
-      'throw coconut milk in pot',
-      'place pot on medium heat',
-      'cook for 40 minutes',
-      'add salt'
-    ]
-  }
-]
+    [
+      {type: "text", value: "add"},
+      {type: "ingredient", value: "salt"},
+      {type: "text", value:"to the mix"},
+    ],
+   ]
+ }
+];
+
 
 export default Recipes;

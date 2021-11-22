@@ -10,5 +10,5 @@ export interface IRecipe {
     quantity: number;
   }[];
   instructions: string[];
-  steps: string[];
+  steps: object[];
 }

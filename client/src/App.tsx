@@ -9,7 +9,7 @@ function App() {
   return (
     <div className="App">
       <Router>
-      <Dashboard/>
+        <Dashboard />
       </Router>
     </div>
   );

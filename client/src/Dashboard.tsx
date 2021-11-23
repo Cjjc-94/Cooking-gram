@@ -6,7 +6,7 @@ function Dashboard() {
   return (
     <div className='dashboard'>
       <Switch>
-        <Route path='/' component={Home}/>
+        <Route path='/' component={Home} />
       </Switch>
 
     </div>
